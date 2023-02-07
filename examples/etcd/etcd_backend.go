@@ -12,7 +12,7 @@ import (
 
 func main() {
 	cli, err := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"192.168.168.13:2379"},
+		Endpoints:   []string{"localhost:2379"},
 		DialTimeout: 5 * time.Second,
 	})
 	if err != nil {
